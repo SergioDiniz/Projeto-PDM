@@ -1,0 +1,26 @@
+<ion-view>
+    <ion-header-bar class="bar-positive">
+              <h1 class="title">Cadastrar aluno</h1>
+    </ion-header-bar>
+
+        <ion-content class="has-header" ng-controller="controller-chat">
+          <div class="list">
+              <label class="item item-input item-stacked-label">
+                <span class="input-label">Matricula do Aluno</span>
+                <input type="text" placeholder="Somente Numeros" ng-model="aluno.matricula">
+              </label>
+              
+              <label class="item item-input item-stacked-label">
+                <span class="input-label">Nome do Aluno</span>
+                <input type="text" placeholder="Nome Completo" ng-model="aluno.nome">
+              </label>
+              
+              <label class="item item-input item-stacked-label">
+                <span class="input-label">CPF do Aluno</span>
+                <input type="text" placeholder="Somente Numeros" ng-model="aluno.cpf">
+              </label>
+          </div>
+
+          <button class="button button-full button-positive" ng-click="insert()">Cadastrar</button>
+    </ion-content>
+</ion-view>
